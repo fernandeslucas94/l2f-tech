@@ -29,8 +29,8 @@
 }
 
 .logoImage {
-  width: 280px;
-  height: 280px;
+  width: 14rem;
+  height: 14rem;
 }
 
 @media (max-width: 1024px) {
@@ -41,5 +41,29 @@
   .contentDescription {
     padding: .5rem;
     text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .contentTitle {
+    font-size: 1.3rem;
+  }
+
+  .contentDescription {
+    padding: .5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 280px) {
+  .contentTitle {
+    font-size: 1.1rem;
+  }
+
+  .contentDescription {
+    padding: .5rem;
+    text-align: center;
+
+    font-size: 1.1rem;
   }
 }
