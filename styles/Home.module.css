@@ -33,9 +33,13 @@
   height: 280px;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media (max-width: 1024px) {
+  .contentTitle {
+    font-size: 1.4rem;
+  }
+
+  .contentDescription {
+    padding: .5rem;
+    text-align: justify;
   }
 }
