@@ -13,11 +13,6 @@ body {
     justify-content: center;
 }
 
-h1 {
-    color: #eee;
-    font-size: 2.5rem;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -34,27 +29,52 @@ header {
 }
 
 .container img {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
 }
 
 .container h2 {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
 }
 
 .container p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
 @media (max-width: 1024px) {
     .container h2 {
-        font-size: 1.3rem;
+        font-size: 2.3rem;
+    }
+
+    .container p {
+        text-align: center;
+        padding: .7rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container h2 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        text-align: center;
+        padding: .7rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 426px) {
+    .container h2 {
+        font-size: 1.1rem;
     }
 
     .container p {
         font-size: 1rem;
-        text-align: justify;
+        text-align: center;
         padding: .7rem;
+        font-size: 1rem;
     }
 }
