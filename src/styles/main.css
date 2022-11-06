@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #296C75;
+    background-color: #001219;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,25 +19,30 @@ header {
     justify-content: center;
 }
 
-.container {
+main {
+    color: #eee;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #eee;
-
-    margin-top: 20%;
+    padding-top: 2rem;
 }
 
-.container img {
-    width: 230px;
-    height: 230px;
+#logo {
+    width: 26rem;
+    height: 26rem;
 }
 
-.container h2 {
-    font-size: 2.2rem;
+.title-and-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.container p {
+.title-and-description h2 {
+    font-size: 2.1rem;
+}
+
+.title-and-description p {
     font-size: 1.4rem;
     font-weight: 500;
 }
