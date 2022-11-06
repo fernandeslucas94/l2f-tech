@@ -60,11 +60,11 @@ main {
 }
 
 @media (max-width: 768px) {
-    .container h2 {
+    .title-and-description h2 {
         font-size: 2rem;
     }
 
-    .container p {
+    .title-and-description p {
         text-align: center;
         padding: .7rem;
         font-size: 1.2rem;
@@ -72,14 +72,24 @@ main {
 }
 
 @media (max-width: 426px) {
-    .container h2 {
+    .title-and-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-and-description h2 {
         font-size: 1.1rem;
     }
 
-    .container p {
+    .title-and-description p {
         font-size: 1rem;
-        text-align: center;
         padding: .7rem;
         font-size: 1rem;
+    }
+
+    #logo {
+        width: 17rem;
+        height: 17rem;
     }
 }
