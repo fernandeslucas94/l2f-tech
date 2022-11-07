@@ -1,0 +1,33 @@
+{
+  "name": "l2f-tech",
+  "version": "1.0.0",
+  "description": "The page for the l2f-tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandeslucas94/l2f-tech.git"
+  },
+  "author": "lucas-fernandes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandeslucas94/l2f-tech/issues"
+  },
+  "homepage": "https://github.com/fernandeslucas94/l2f-tech#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.0"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0"
+  }
+}
