@@ -5,7 +5,7 @@ const imagemin = require("gulp-imagemin");
 
 const paths = {
   html: {
-    main: "/dist/index.html"
+    all: "/dist/index.html"
   },
 
   styles: {
@@ -26,7 +26,7 @@ const paths = {
 };
 
 function watcher() {
-  watch(paths.html.main, { ignoreInitial: false }, html);
+  watch(paths.html.all, { ignoreInitial: false }, html);
   watch(paths.styles.all, { ignoreInitial: false }, styles);
   watch(paths.scripts.all, { ignoreInitial: false }, scripts);
   watch(paths.images.all, { ignoreInitial: false }, images);
@@ -41,7 +41,7 @@ function server() {
 }
 
 function html() {
-  return src(paths.html.main).pipe(dest(paths.output)).pipe(connect.reload());
+  return src(paths.html.all).pipe(dest(paths.output)).pipe(connect.reload());
 }
 
 function styles() {
