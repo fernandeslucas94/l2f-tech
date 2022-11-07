@@ -2,17 +2,14 @@
 
 header {
     width: 100vw;
+    height: 5.8rem;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     #logo {
-
-        width: 12rem;
-        height: 10.5rem;
-
-        margin-left: 3rem;
+        display: none;
     }
 
     .menu-container {
