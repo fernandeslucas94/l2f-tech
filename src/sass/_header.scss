@@ -2,6 +2,7 @@
 
 header {
     width: 100vw;
+    height: 5.8rem;
 
     display: flex;
     align-items: center;
@@ -9,9 +10,11 @@ header {
 
     #logo {
         width: 12rem;
-        height: 11.6rem;
+        height: 12rem;
 
         margin-left: 3rem;
+
+        padding-top: 1em;
     }
 
     .menu-container {
