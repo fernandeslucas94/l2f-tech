@@ -1,48 +1,126 @@
 @use './globals/variables.scss' as *;
 
-header {
-    width: 100vw;
-    height: 5.8rem;
+@media (max-width: 480px) {
+    header {
+        width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    #logo {
-        width: 12rem;
-        height: 12rem;
-
-        margin-left: 3rem;
-
-        padding-top: 1em;
-    }
-
-    .menu-container {
-        width: 25.6rem;
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
-
-        margin-right: 3rem;
+        justify-content: space-between;
     }
 
-    ul {
-        li {
-            list-style: none;
-            display: inline-block;
-            padding-bottom: .8rem;
-            margin-right: .8rem;
+    header .menu-container {
+         display: none;
+     }
+ 
+     .menu-mobile-icon {
+         display: flex;
+ 
+         width: 3rem;
+         height: 2.3rem;
+ 
+         margin-right: 2rem;
+         margin-top: .9rem;
+     }
+ 
+     header {
+         #logo {
+             width: 8.5rem;
+             height: 9rem;
+
+             margin-left: 1rem;
+         }
+     }
+ }
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+   header .menu-container {
+        display: none;
+    }
+
+    .menu-mobile-icon {
+        display: flex;
+
+        width: 3rem;
+        height: 2.3rem;
+
+        margin-right: 2rem;
+        margin-top: .9rem;
+    }
+
+    header {
+        #logo {
+            width: 9rem;
+            height: 10rem;
         }
+    }
+}
 
-        a {
-            text-decoration: none;
-            color: $default-page-color;
-            font-size: 1.1rem;
-            font-weight: 500;
-            text-transform: uppercase;
-
-            &:hover {
-                border-bottom: 1px solid #eee;
+@media (min-width: 769px) {
+    header {
+        width: 100vw;
+        height: 8rem;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .menu-mobile-icon {
+            display: none;
+        }
+    
+        #logo {
+            width: 13.5rem;
+            height: 13.5rem;
+    
+            margin-left: 3rem;
+            margin-top: 1.5rem;
+    
+            padding-bottom: 1em;
+        }
+    
+        .menu-container {
+            width: 25.6rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+    
+            margin-right: 3rem;
+    
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 33rem;
+        
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    padding-bottom: .8rem;
+                    margin-right: .8rem;
+                }
+        
+                a {
+                    text-decoration: none;
+                    color: $default-page-color;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+        
+                    &:hover {
+                        padding: .2em;
+                        transition: .2s;
+                        margin-right: .6rem;
+                    }
+                }
             }
         }
     }
