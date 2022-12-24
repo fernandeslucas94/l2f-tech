@@ -78,8 +78,8 @@
         }
     
         #logo {
-            width: 13.5rem;
-            height: 13.5rem;
+            width: 13rem;
+            height: 14rem;
     
             margin-left: 3rem;
             margin-top: 1.5rem;
@@ -116,9 +116,9 @@
                     text-transform: uppercase;
         
                     &:hover {
-                        padding: .2em;
-                        transition: .2s;
-                        margin-right: .6rem;
+                        border-bottom: 1px solid $default-page-color;
+                        padding-bottom: .5rem;
+                        transition: .3s;
                     }
                 }
             }
