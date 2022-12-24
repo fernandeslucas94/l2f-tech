@@ -3,88 +3,36 @@
 
 body {
     background-color: $main-bg-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 main {
     color: $default-page-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2rem;
-}
 
-#logo {
-    width: 26rem;
-    height: 26rem;
-}
+    #page-slogan {
+        border: 1px solid #CCC;
+        border-radius: 1.5rem;
 
-.title-and-description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    h2 {
-        font-size: 2.1rem;
-    }
+        width: 70%;
+        height: 8rem;
 
-    p {
-        font-size: 1.4rem;
-        font-weight: 500;
+        margin: 3rem auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
     }
 }
 
 // Reponsivite
 @media (max-width: 1024px) {
-    .container {
-        h2 {
-            font-size: 2.3rem;
-        }
 
-        p {
-            text-align: center;
-            padding: .7rem;
-            font-size: 1.5rem;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .title-and-description {
-        h2 {
-            font-size: 2rem;
-        }
-
-        p {
-            text-align: center;
-            padding: .7rem;
-            font-size: 1.2rem;
-        }
-    }
 }
 
 @media (max-width: 426px) {
-    .title-and-description {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
-        h2 {
-            font-size: 1.1rem;
-        }
-
-        p {
-            font-size: 1rem;
-            padding: .7rem;
-            font-size: 1rem;
-        }
-    }
-
-    #logo {
-        width: 17rem;
-        height: 17rem;
-    }
 }

@@ -2,6 +2,9 @@ const { src, dest, watch, parallel } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const connect = require("gulp-connect");
 const imagemin = require("gulp-imagemin");
+const source = require('vinyl-source-stream');
+const buffer = require('vinyl-buffer');
+const uglify = require('gulp-uglify');
 
 const paths = {
   html: {
