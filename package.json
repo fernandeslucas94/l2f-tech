@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/fernandeslucas94/l2f-tech/issues"
   },
+  "engines": {
+  "node": ">=26"
+},
   "homepage": "https://github.com/fernandeslucas94/l2f-tech#readme",
   "devDependencies": {
     "@babel/core": "^7.20.2",
