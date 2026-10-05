@@ -17,7 +17,7 @@
     "url": "https://github.com/fernandeslucas94/l2f-tech/issues"
   },
   "engines": {
-  "node": ">=26"
+  "node": "24.x"
 },
   "homepage": "https://github.com/fernandeslucas94/l2f-tech#readme",
   "devDependencies": {
